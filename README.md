@@ -2,8 +2,10 @@
 
 This project aims to analyze the trends in fertility and life expectancy rates from 1960 to 2013. The objective of this analysis is to utilize Python for data manipulation by loading the important libraries to provide insights into population dynamics, potential economic and health impacts, explanations for the aging population, and immigration needs. I will build appropriate visuals for the problem set which specifically aims to address the following question
 
--- How do the countries compare to the region it is apart of in terms of average fertility?
+-- How do the countries compare to the region it is apart of in terms of average fertility
+
 -- How does Life expectancy change, decade to decade ?
+
 -- Any relationship between Life Expectancy and Fertility ?
 
 # Data
@@ -22,6 +24,7 @@ The project utilized Python in Visual Studio Code and Microsoft Excel.
 
 The libraries that will be loaded into pythone for this analysis are;
 -- Pandas
+
 -- Openpyxl (Microsoft Excel)
 
 # Steps Followed
