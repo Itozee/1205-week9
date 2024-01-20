@@ -1,14 +1,28 @@
-# Study on Trends in Fertility and Life Expectancy in Canada Over the Decades
+# Study on Trends in Fertility and Life Expectancy Over the Decades
 
-This project aims to analyze the trends in fertility and life expectancy rates in Canada from 1960 to 2013. The objective is to utilize Python for data manipulation and employ Power BI for visualization to provide insights into population dynamics, potential economic and health impacts, explanations for the aging population, and immigration needs.
+This project aims to analyze the trends in fertility and life expectancy rates from 1960 to 2013. The objective of this analysis is to utilize Python for data manipulation by loading the important libraries to provide insights into population dynamics, potential economic and health impacts, explanations for the aging population, and immigration needs. I will build appropriate visuals for the problem set which specifically aims to address the following question
+
+-- How do the countries compare to the region it is apart of in terms of average fertility?
+-- How does Life expectancy change, decade to decade ?
+-- Any relationship between Life Expectancy and Fertility ?
 
 # Data
 
-The data sources are contained in a folder with three Excel sheets: Country_Metadata, Fertility_Rate, and LifeExpectancy_At_Birth.
+The data is stored within a directory, encompassing three Excel sheets: Country_Metadata, Fertility_Rate, and LifeExpectancy_At_Birth.
+
+Country_Metadata: This workbook consist of the countries being used for analysis, the country code, student_id (the use will be discussed upon in later stages of this project), the region in which these countries are located, the income group of the countries and special notes regarding the countries.
+
+Fertility_Rate: This workbook incorporates shared variables from country metadata and data spanning from 1960 to 2013, specifically focusing on fertility rates across the various countries.
+
+LifeExpectancy_At_Birth: This workbook integrates shared variables from country metadata alongside life expectancy data for various countries, spanning the years 1960 to 2013.
 
 # Tools
 
-The project utilized Python in Visual Studio Code, Microsoft Excel, Power Query, and Power BI.
+The project utilized Python in Visual Studio Code and Microsoft Excel.
+
+The libraries that will be loaded into pythone for this analysis are;
+-- Pandas
+-- Openpyxl (Microsoft Excel)
 
 # Steps Followed
 
@@ -16,7 +30,7 @@ The project utilized Python in Visual Studio Code, Microsoft Excel, Power Query,
 
 - Uploaded raw data to GitHub.
   
-- Linked to Visual Studio Code and imported data using pandas, numpy, and openpyxl.
+- Linked to Visual Studio Code and imported data using pandas and openpyxl.
 
 - Set maximum columns and created dataframes for each Excel sheet.
 
