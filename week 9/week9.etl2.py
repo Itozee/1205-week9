@@ -48,7 +48,7 @@ melted_life_expectancy = pd.melt(df_life_expectancy3, id_vars= df_cols, var_name
 #print(melted_life_expectancy)
 
 # Verifying the datatypes of the clolumns in the the dataset
-#print(df_fertility_cols.info())
+print(df_fertility_cols.info())
 #print(df_fertility_cols.info())
 
 
