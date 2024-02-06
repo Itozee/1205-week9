@@ -1,12 +1,8 @@
-# Study on Trends in Fertility and Life Expectancy Over the Decades
+# Exploring Population Dynamics: A Python-based Analysis of Fertility and Life Expectancy Trends (1960-2013)
 
-This project aims to analyze the trends in fertility and life expectancy rates from 1960 to 2013. The objective of this analysis is to utilize Python for data manipulation by loading the important libraries to provide insights into population dynamics, potential economic and health impacts, explanations for the aging population, and immigration needs. I will build appropriate visuals for the problem set which specifically aims to address the following question
+This project is designed to conduct a comprehensive analysis of fertility and life expectancy trends spanning the years 1960 to 2013. The primary goal is to leverage Python for advanced data manipulation, aiming to uncover valuable insights into population dynamics. The analysis will delve into potential economic and health impacts, investigate factors contributing to the aging population, and assess immigration needs.
 
--- How do the countries compare to the region it is apart of in terms of average fertility
-
--- How does Life expectancy change, decade to decade ?
-
--- Any relationship between Life Expectancy and Fertility ?
+Taking a more focused approach, the investigation will be specifically tailored to the country associated with my student ID as indicated in the metadata. This targeted analysis will offer a nuanced understanding of the region's fertility and life expectancy trends, providing valuable insights into the demographic landscape of the chosen country over the decades.
 
 # Data
 
@@ -17,6 +13,16 @@ Country_Metadata: This workbook consist of the countries being used for analysis
 Fertility_Rate: This workbook incorporates shared variables from country metadata and data spanning from 1960 to 2013, specifically focusing on fertility rates across the various countries.
 
 LifeExpectancy_At_Birth: This workbook integrates shared variables from country metadata alongside life expectancy data for various countries, spanning the years 1960 to 2013.
+
+# Questions the data will answer
+
+I will build appropriate visuals for the problem set which specifically aims to address the following question.
+
+-- How do the countries compare to the region it is apart of in terms of average fertility
+
+-- How does Life expectancy change, decade to decade ?
+
+-- Any relationship between Life Expectancy and Fertility ?
 
 # Tools
 
