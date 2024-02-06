@@ -124,16 +124,14 @@ df_mergedd = pd.merge(left=df_merged, right=melted_expectancy, how='left', on=['
 df_region = df_mergedd.groupby(['Region'])[['Fertility', 'Expectancy']].mean().reset_index()
 df_region = df_region.iloc[[6]]
 
-# # Creating a dataframe for my StudentID
-# df_Country = df_mergedd[df_mergedd['StudentID'] == 100871852]
-# df_Country = df_Country.loc[:, ['Country Name', 'Fertility', 'Expectancy']]
-# df_Country_A = df_Country.groupby(['Country Name'])[['Fertility', 'Expectancy']].mean().reset_index()
 
 # Creating a dataframe for my StudentID
 df_Country = df_mergedd[df_mergedd['StudentID'] == 100871852]
 # df_Country = df_Country.loc[:, ['Country Name', 'Fertility', 'Expectancy']]
 df_Countryy = df_Country.loc[:, ['Country Name', 'Fertility', 'Expectancy','Year_expectancy']]
 df_Country_A = df_Country.groupby(['Country Name'])[['Fertility', 'Expectancy']].mean().reset_index()
+
+print(df_Country_A)
 
 # Creating a common column name
 df_region.columns = ['Location', 'Fertility', 'Expectancy']
@@ -191,7 +189,7 @@ df_Countryy.loc[(df_Countryy['Year_expectancy']>= 2010), 'Decade'] = "2010's"
 df_Countryy = df_Countryy.groupby(['Decade'])[['Expectancy']].mean().reset_index()
 
 # df_Countryy = df_Countryy.groupby(['Decade'])[['Expectancy', 'Fertility']].mean().reset_index()
-print(df_Countryy)
+#print(df_Countryy)
 
 from openpyxl.chart import (
     LineChart,
@@ -220,10 +218,10 @@ wb.save('Sample_5.xlsx')
 
 
 # Scatter plot to check for relationship between Fertility and Expectancy
-import matplotlib.pyplot as plt
-plt.scatter(df_mergedd_DA.Fertility, df_mergedd_DA.Expectancy)
-plt.title("Fertility Vs Expectancy")
-plt.xlabel("Fertility (%)")
-plt.ylabel("Expectancy")
-plt.show()
-plt.savefig('sample_3')
+# import matplotlib.pyplot as plt
+# plt.scatter(df_mergedd_DA.Fertility, df_mergedd_DA.Expectancy)
+# plt.title("Fertility Vs Expectancy")
+# plt.xlabel("Fertility (%)")
+# plt.ylabel("Expectancy")
+# plt.show()
+# plt.savefig('sample_3')

@@ -10,7 +10,7 @@ def function(origin,datafile):
     return dataframe
 
 # Applying the function 
-df_metadata = function('week 9/P11-Country-Metadata.xlsx', 'Metadata - Countries')
+df_metadata = function('week 9/P11-Country-Metadata (1).xlsx', 'Metadata - Countries')
 df_fertility = function('week 9/P11-Fertility-Rate.xlsx', 'Data')
 df_life_expectancy = function('week 9/P11-Life-Expectancy-At-Birth.xlsx', 'Data' )
 
@@ -25,7 +25,7 @@ def Excel(workbooks, worksheets):
     exl_worksheet = pd.read_excel(workbooks)
     return exl_worksheet
 
-df_metadata3 = Excel('week 9/P11-Country-Metadata.xlsx','Metadata - Countries')
+df_metadata3 = Excel('week 9/P11-Country-Metadata (1).xlsx','Metadata - Countries')
 df_fertility3 = Excel('week 9/P11-Fertility-Rate.xlsx','Data')
 df_life_expectancy3 = Excel( 'week 9/P11-Life-Expectancy-At-Birth.xlsx','Data',)
 
@@ -48,8 +48,8 @@ melted_life_expectancy = pd.melt(df_life_expectancy3, id_vars= df_cols, var_name
 #print(melted_life_expectancy)
 
 # Verifying the datatypes of the clolumns in the the dataset
-print(df_fertility_cols.info())
-#print(df_fertility_cols.info())
+#print(melted_fertility.info())
+#print(melted_life_expectancy.info())
 
 
 # Converting the datatype of the Year column from Object to Integer for both fertility and life_expectancy datasets
@@ -70,9 +70,19 @@ df_first_merge = pd.merge (left=df_metadata3,right=melted_fertility,how='left',o
 df_second_merge = pd.merge (left=df_first_merge,right=melted_life_expectancy,how='left',on=['Country Code'],suffixes = ['L', 'R'])
 
 #Analysis
+# Creating a dataframe for my StudentID (This filters and shows only the records applicable to 100871852)
+df_studentid = df_second_merge[df_second_merge['StudentID'] == 100871852]
+print(df_studentid)
+
+#Average fertility and life expectancy rate for Swaziland over the years
+df_country = df_studentid.groupby(['Region'])[['Fertility', 'Life Expectancy']].mean().reset_index()
+print(df_country)
+
 # Grouping the data by region to analyze fertility and life expectancy trends(groupby)
 df_region = df_second_merge.groupby(['Region'])[['Fertility','Life Expectancy']].mean().reset_index()
 #print(df_region)
+
+
 
 
 
