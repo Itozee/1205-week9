@@ -29,9 +29,19 @@ I will build appropriate visuals for the problem set which specifically aims to 
 The project utilized Python in Visual Studio Code and Microsoft Excel.
 
 The libraries that will be loaded into python for this analysis are;
+
 -- Pandas
 
 -- Openpyxl (Microsoft Excel)
+
+ We also used some modules imported from the openpyxl library, the modules used are;
+
+-- from openpyxl import Workbook
+-- from openpyxl.utils.dataframe import dataframe_to_rows
+-- from openpyxl.chart import BarChart, Series, Reference
+
+I plan to elaborate on the utilization of these modules when I begin implementing them during the course of the project.
+
 
 # Steps Followed
 
@@ -43,8 +53,6 @@ The libraries that will be loaded into python for this analysis are;
 
 - Set maximum columns and created dataframes for each Excel sheet.
 
-- Utilized islice from itertools for various transformations.
-
 - Performed actions such as creating headers, resetting index, changing column names, melting columns, converting types, merging, creating new columns, and 
   calculating averages.
 
@@ -52,18 +60,7 @@ The libraries that will be loaded into python for this analysis are;
 
   The resulting dataframes are df_region, df_country, and df_canada.
 
-# Data Loading into Power BI
 
-- Imported the created dataframes into Power BI.
-
-- Used Power Query for basic editing like decimal reduction and removing index columns.
-
-- In Power BI:
-
-  1. Utilized a line graph to depict the trend of fertility and life expectancy over the years.
-  2. Employed scorecards to display the averages of life expectancy and fertility.
-  3. Generated visuals comparing North America's average fertility rate and life expectancy to Canada's.
- 
 # Outcome
 The analysis reveals a decline in fertility rates and an increase in life expectancy in Canada. Fertility dropped from 3.81 in 1960 to 1.61 in 2013, averaging 1.96 over the period, compared to North America's 2.02. Life expectancy in Canada increased from 71.13 in 1960 to 81.40 in 2013, averaging 76.32, compared to North America's 75.64. This trend contributes to Canada's demographic structure with more aged individuals than young ones and emphasizes the country's high immigration requirements. Future analyses may incorporate additional data, such as medical, education, and economic indicators, using advanced statistical tools to explore correlations, make predictions, and offer recommendations.   
 
