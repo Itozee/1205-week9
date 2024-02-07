@@ -2,13 +2,13 @@
 
 This project is designed to conduct a comprehensive analysis of fertility and life expectancy trends spanning the years 1960 to 2013. The primary goal is to leverage Python for advanced data manipulation, aiming to uncover valuable insights into population dynamics. The analysis will delve into potential economic and health impacts, investigate factors contributing to the aging population, and assess immigration needs.
 
-Taking a more focused approach, the investigation will be specifically tailored to the country associated with my student ID as indicated in the metadata. This targeted analysis will offer a nuanced understanding of the region's fertility and life expectancy trends, providing valuable insights into the demographic landscape of the chosen country over the decades.
+Taking a more focused approach, the investigation will be specifically tailored to the country associated with my student ID (100871852) as indicated in the metadata. This targeted analysis will offer a nuanced understanding of the region's fertility and life expectancy trends, providing valuable insights into the demographic landscape of the chosen country over the decades.
 
 # Data
 
-The data is stored within a directory, encompassing three Excel sheets: Country_Metadata, Fertility_Rate, and LifeExpectancy_At_Birth.
+The data is stored within a directory, encompassing three Excel sheets: Country_Metadata, Fertility_Rate, and Life Expectancy_At_Birth.
 
-Country_Metadata: This workbook consist of the countries being used for analysis, the country code, student_id (the use will be discussed upon in later stages of this project), the region in which these countries are located, the income group of the countries and special notes regarding the countries.
+Country_Metadata: This workbook consist of the countries being used for analysis, the country code, student_id (the use will be discussed upon in later stages of this project), the region in which these countries are located, the income group of the countries and special notes regarding the countries. Metadata refers to data that provides information about other data. In other words, it is data about the information provided in the fertility and life expectancy worksheets. 
 
 Fertility_Rate: This workbook incorporates shared variables from country metadata and data spanning from 1960 to 2013, specifically focusing on fertility rates across the various countries.
 
@@ -18,17 +18,17 @@ LifeExpectancy_At_Birth: This workbook integrates shared variables from country 
 
 I will build appropriate visuals for the problem set which specifically aims to address the following question.
 
--- How do the countries compare to the region it is apart of in terms of average fertility
+-- How does the country associated with my student ID (100871852) compare to the region it is apart of in terms of average fertility
 
--- How does Life expectancy change, decade to decade ?
+-- How does Life expectancy in the country associated with my student ID (100871852) change, decade to decade ?
 
--- Any relationship between Life Expectancy and Fertility ?
+-- Any relationship between Life Expectancy and Fertility in the country associated with my student ID (100871852)?
 
 # Tools
 
 The project utilized Python in Visual Studio Code and Microsoft Excel.
 
-The libraries that will be loaded into pythone for this analysis are;
+The libraries that will be loaded into python for this analysis are;
 -- Pandas
 
 -- Openpyxl (Microsoft Excel)
