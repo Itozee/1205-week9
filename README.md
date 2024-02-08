@@ -30,14 +30,16 @@ The project utilized Python in Visual Studio Code and Microsoft Excel.
 
 The libraries that will be loaded into python for this analysis are;
 
--- Pandas
+-- Pandas: The pandas library in Python is a powerful and widely used open-source data manipulation and analysis library. It provides data structures for efficiently storing and manipulating large datasets, along with tools for cleaning, aggregating, and analyzing data.
 
--- Openpyxl (Microsoft Excel)
+-- Openpyxl (Microsoft Excel): This library is used for working with Excel files in Python.
 
  We also used some modules imported from the openpyxl library, the modules used are;
 
 -- from openpyxl import Workbook
+
 -- from openpyxl.utils.dataframe import dataframe_to_rows
+
 -- from openpyxl.chart import BarChart, Series, Reference
 
 I plan to elaborate on the utilization of these modules when I begin implementing them during the course of the project.
@@ -47,11 +49,14 @@ I plan to elaborate on the utilization of these modules when I begin implementin
 
 # Data Extraction and Transformation (Codes available in the Python code folder)
 
-- Uploaded raw data to GitHub.
+- Uploaded the raw data(Metadata, Fertility and Life expectancy files) to GitHub.
   
-- Linked to Visual Studio Code and imported data using pandas and openpyxl.
+- Linked the datasets to Visual Studio Code and imported data using pandas and openpyxl.
+  
+- I Set the maximum number of columns to 500 when showing a DataFrame.
 
-- Set maximum columns and created dataframes for each Excel sheet.
+# Functions
+
 
 - Performed actions such as creating headers, resetting index, changing column names, melting columns, converting types, merging, creating new columns, and 
   calculating averages.
