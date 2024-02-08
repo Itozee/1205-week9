@@ -8,11 +8,47 @@ Taking a more focused approach, the investigation will be specifically tailored 
 
 The data is stored within a directory, encompassing three Excel sheets: Country_Metadata, Fertility_Rate, and Life Expectancy_At_Birth.
 
-Country_Metadata: This workbook consist of the countries being used for analysis, the country code, student_id (the use will be discussed upon in later stages of this project), the region in which these countries are located, the income group of the countries and special notes regarding the countries. Metadata refers to data that provides information about other data. In other words, it is data about the information provided in the fertility and life expectancy worksheets. 
+Country_Metadata: This workbook consist of the countries being used for analysis, the country code, student_id (the use will be discussed upon in later stages of this project), the region in which these countries are located, the income group of the countries and special notes regarding the countries. Metadata refers to data that provides information about other data. In other words, it is data about the information provided in the fertility and life expectancy worksheets.
+
+The columns in this dataset include;
+
+-- Country Name: The entries in this column correspond to various countries.
+
+-- Country Code: The entries in the column correspond to three-letter codes representing their respective countries.
+
+-- Student ID: This represents the student id of each students in my class taking the course.
+
+-- Region: This represents the regions where each countries are located in the world. ie Sub-Saharan Africa
+
+-- Income Group: This denotes the economic classification of countries based on their present Gross Domestic Product (GDP)
+
+-- Special Notes: This represents some additional written information about the countries.
 
 Fertility_Rate: This workbook incorporates shared variables from country metadata and data spanning from 1960 to 2013, specifically focusing on fertility rates across the various countries.
 
+The columns in this dataset include;
+
+-- Country Name: The entries in this column correspond to various countries.
+
+-- Country Code: The entries in the column correspond to three-letter codes representing their respective countries.
+
+-- Indicator Name: The column communicates that the data relates to total fertility rate, specifically measured in "births per woman."
+
+-- rom the year 1960 to 2013, data is available for each country, representing the recorded fertility rates for each respective year.
+
+
 LifeExpectancy_At_Birth: This workbook integrates shared variables from country metadata alongside life expectancy data for various countries, spanning the years 1960 to 2013.
+
+The columns in this dataset include;
+
+-- Country Name: The entries in this column correspond to various countries.
+
+-- Country Code: The entries in the column correspond to three-letter codes representing their respective countries.
+
+-- Indicator Name: The column communicates that the data relates to life expectancy age, specifically measured in "years."
+
+-- From 1960 to 2013, data is available for each country, representing recorded life expectancy values for each respective year
+
 
 # Questions the data will answer
 
@@ -57,8 +93,20 @@ I plan to elaborate on the utilization of these modules when I begin implementin
 
 # Functions
 
+I started data analysis by first creating Functions to read the datasets and access the worksheets in Excel format after which was stored in a dataframe.
 
-- Performed actions such as creating headers, resetting index, changing column names, melting columns, converting types, merging, creating new columns, and 
+Functions in Python serve several crucial purposes, some of the reasons why i have used a function for the purpose stated above include;
+
+Modularity: It allow me to break down a program into smaller, more manageable, and reusable pieces of code. 
+
+Abstraction: Functions provide a level of abstraction, allowing me to use code without needing to understand its internal details. Abstraction allows you to hide the complex inner workings of a function. When you call a function, you don't need to know how it accomplishes its task; you only need to know what the function does and how to use it.
+
+Readability: Well-named functions enhance code readability by providing a clear and concise way to express the purpose of a block of code. This is especially important in larger programs.
+
+# Transformations
+
+
+- Performed actions such as creating headers, resetting index, changing column names, melting columns, converting datatypes, merging, creating new columns, and 
   calculating averages.
 
 - Saved the transformed dataframes in Excel format for local download.
