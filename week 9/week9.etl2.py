@@ -2,6 +2,9 @@ import pandas as pd
 from openpyxl import load_workbook
 from itertools import islice
 
+# To display the maximum number of columns to display when showing a DataFrame.
+pd.set_option('display.max_columns',500)
+
 # Creating a Function to read data from an Excel file and convert into dataframe
 def function(origin,datafile):
     wb = load_workbook(filename = origin)
@@ -58,10 +61,6 @@ melted_life_expectancy ['Year'] = melted_life_expectancy ['Year'].astype(int)
 
 #print(melted_fertility.info())
 #print(melted_life_expectancy.info())
-
-# To display the maximum number of columns to display when showing a DataFrame.
-pd.set_option('display.max_columns',500)
-
 
 # Merging the first two datasets (fertility and metadata) together
 df_first_merge = pd.merge (left=df_metadata3,right=melted_fertility,how='left',on=['Country Code'],suffixes = ['L', 'R'])
