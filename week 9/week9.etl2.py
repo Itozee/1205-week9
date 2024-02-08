@@ -2,7 +2,7 @@ import pandas as pd
 from openpyxl import load_workbook
 from itertools import islice
 
-# Creating a Function to load each excel sheet into a dataframe
+# Creating a Function to read data from an Excel file and convert into dataframe
 def function(origin,datafile):
     wb = load_workbook(filename = origin)
     ws = wb [datafile]
@@ -18,7 +18,7 @@ df_life_expectancy = function('week 9/P11-Life-Expectancy-At-Birth.xlsx', 'Data'
 #print(df_fertility.head)
 #print(df_life_expectancy.head)
 
-#Function to Create worksheets from my workbooks
+#Function to access a worksheet, and then read the content of that worksheet into a Pandas DataFrame
 def Excel(workbooks, worksheets):
     wbb = load_workbook(filename = workbooks)
     wss = wbb [worksheets]
