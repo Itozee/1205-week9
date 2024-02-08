@@ -37,7 +37,6 @@ df_life_expectancy3 = Excel( 'week 9/P11-Life-Expectancy-At-Birth.xlsx','Data',)
 #print(df_life_expectancy3.head())
 
 
-
 #   Melting the Year and value(statistic) for Fertility and Life_Expectance datasets
 df_cols = ["Country Name", "Country Code", "Indicator Name", "Indicator Code"]
 melted_fertility = pd.melt(df_fertility3, id_vars= df_cols, var_name="Year", value_name = "Fertility")
