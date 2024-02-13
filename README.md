@@ -109,6 +109,9 @@ Our datasets (Fertility and Life Expectancy) consists of columns representing th
 
 melted_fertility and melted_life_expectancy became the new dataframes showing the effect of the melt meaning df_fertility and df_life_expectancy dataframes would be disregarded for ongoing analysis.
 
+-- About Melt
+In Python, the pd.melt() function is used to reshape or transform a DataFrame. The basic idea is to unpivot or melt the DataFrame, moving the columns (except for the specified identifier variables) into two columns: one for variable names and another for the corresponding values. This can be helpful in scenarios where you have data in a format where variables are spread across columns, and you want to reorganize it for analysis or visualization.
+
 -- Datatype
 I observed the datatype for the year column was operated as a float for both melted_fertility and melted_life_expectancy. I converted the datatype for both dataframes into Integer. 
 
@@ -117,10 +120,19 @@ When working with real-world datasets, information is often split across multipl
 
 I first merged df_metatdata with melted_fertility dataframes into a dataframe called first_merge then merged first_merge dataframe with melted_life_expectancy into a second_merge dataframe. The second_merge dataframe now consists of all the information found in df_metatdata, melted_fertility and melted_life_expectancy dataframes.
 
+At this stage, we can now perform various indept analysis on the second_merge table/dataset/dataframe to get insights about our data.
+
+-- Filter
+Similar to the 'WHERE' clause on SQL, I filtered the data to show on the country associated with my student ID (100871852). This will show me only the records related to Swaziland as it the country associated to my student ID.
+
+It is important to know that every transformations con be contained in a new dataframe and that dataframe could be used for further insights.
+
+Some analysis that were further done, to answer our question were;
+-- Average fertility and life expectancy rate for Swaziland
+
+-- Average fertility and life expectancy by region of the countries 
 
 
--- About Melt
-In Python, the pd.melt() function is used to reshape or transform a DataFrame. The basic idea is to unpivot or melt the DataFrame, moving the columns (except for the specified identifier variables) into two columns: one for variable names and another for the corresponding values. This can be helpful in scenarios where you have data in a format where variables are spread across columns, and you want to reorganize it for analysis or visualization.
 
 
 
