@@ -104,6 +104,24 @@ Abstraction: Functions provide a level of abstraction, allowing me to use code w
 Readability: Well-named functions enhance code readability by providing a clear and concise way to express the purpose of a block of code. This is especially important in larger programs.
 
 # Transformations
+--Melt
+Our datasets (Fertility and Life Expectancy) consists of columns representing the values recorded for years 1960 to 2013. This wide-format isn't ideal for analysis so I used the melt function in converting into long-format data. The other columns will remain unpivoted.
+
+melted_fertility and melted_life_expectancy became the new dataframes showing the effect of the melt meaning df_fertility and df_life_expectancy dataframes would be disregarded for ongoing analysis.
+
+-- Datatype
+I observed the datatype for the year column was operated as a float for both melted_fertility and melted_life_expectancy. I converted the datatype for both dataframes into Integer. 
+
+-- Merge
+When working with real-world datasets, information is often split across multiple tables. pd.merge() helps integrate this information into a single, unified view. The use of a merge will help us better analyse and visualize to give us insights about the datasets. We have three datasets (Df_metadata, melted_fertility and melted_life_expectancy) in their respective dataframes and the information in them relate with each other. To perform a join, we need to have a matching column that is with common identifier with the dataframes/datasets. Country code and Country name are unique columns present in all. I merged with the country code as it reprsented thr best keys to match with.
+
+I first merged df_metatdata with melted_fertility dataframes into a dataframe called first_merge then merged first_merge dataframe with melted_life_expectancy into a second_merge dataframe. The second_merge dataframe now consists of all the information found in df_metatdata, melted_fertility and melted_life_expectancy dataframes.
+
+
+
+-- About Melt
+In Python, the pd.melt() function is used to reshape or transform a DataFrame. The basic idea is to unpivot or melt the DataFrame, moving the columns (except for the specified identifier variables) into two columns: one for variable names and another for the corresponding values. This can be helpful in scenarios where you have data in a format where variables are spread across columns, and you want to reorganize it for analysis or visualization.
+
 
 
 - Performed actions such as creating headers, resetting index, changing column names, melting columns, converting datatypes, merging, creating new columns, and 
