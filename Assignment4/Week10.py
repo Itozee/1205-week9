@@ -123,15 +123,14 @@ df_mergedd = pd.merge(left=df_merged, right=melted_expectancy, how='left', on=['
 # Creating a dataframe to capture the Regions Fertility and Life Expectancy
 df_region = df_mergedd.groupby(['Region'])[['Fertility', 'Expectancy']].mean().reset_index()
 df_region = df_region.iloc[[6]]
-
+print(df_region)
 
 # Creating a dataframe for my StudentID
 df_Country = df_mergedd[df_mergedd['StudentID'] == 100871852]
-# df_Country = df_Country.loc[:, ['Country Name', 'Fertility', 'Expectancy']]
 df_Countryy = df_Country.loc[:, ['Country Name', 'Fertility', 'Expectancy','Year_expectancy']]
 df_Country_A = df_Country.groupby(['Country Name'])[['Fertility', 'Expectancy']].mean().reset_index()
 
-print(df_Country_A)
+#print(df_Country_A)
 
 # Creating a common column name
 df_region.columns = ['Location', 'Fertility', 'Expectancy']

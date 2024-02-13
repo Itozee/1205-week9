@@ -78,7 +78,7 @@ print(df_country)
 
 # Grouping the data by region to analyze fertility and life expectancy trends(groupby)
 df_region = df_second_merge.groupby(['Region'])[['Fertility','Life Expectancy']].mean().reset_index()
-#print(df_region)
+print(df_region)
 
 
 
