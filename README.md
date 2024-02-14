@@ -130,7 +130,7 @@ It is important to know that every transformations con be contained in a new dat
 Some analysis that were further done, to answer our question were;
 -- Average fertility and life expectancy rate for Swaziland
 
--- Average fertility and life expectancy by region of the countries 
+-- Average fertility and life expectancy in Sub-Saharan region where Swaziland is in
 
 
 
