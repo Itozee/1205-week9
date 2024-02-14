@@ -123,7 +123,7 @@ df_mergedd = pd.merge(left=df_merged, right=melted_expectancy, how='left', on=['
 # Creating a dataframe to capture the Regions Fertility and Life Expectancy
 df_region = df_mergedd.groupby(['Region'])[['Fertility', 'Expectancy']].mean().reset_index()
 df_region = df_region.iloc[[6]]
-print(df_region)
+#print(df_region)
 
 # Creating a dataframe for my StudentID
 df_Country = df_mergedd[df_mergedd['StudentID'] == 100871852]
@@ -138,6 +138,7 @@ df_Country_A.columns = ['Location', 'Fertility', 'Expectancy']
 
 # merging data frames
 df_join = pd.concat([df_region, df_Country_A], axis =0 )
+print(df_join)
 
 # Plotting bar chart to compare Sub-Saharan Africa and Gambia Average Fertility
 #  and Average Life Expectancy
