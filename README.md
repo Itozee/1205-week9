@@ -138,22 +138,44 @@ Similar to the 'WHERE' clause on SQL, I filtered the data to show on the country
 It is important to know that every transformations con be contained in a new dataframe and that dataframe could be used for further insights.
 
 
-Some analysis that were further done, to answer question questions 1,2 and 3 are;
+Some analysis that were further done, to answer question questions 1 and 2 are;
+
+# Question 1
 
 -- Average fertility and life expectancy rate for Swaziland
 
--- Average fertility and life expectancy in Sub-Saharan region where Swaziland is in
+-- Average fertility and life expectancy for all countries in Sub-Saharan region where Swaziland is in
+
+I joined both dataframes using pd.concat. The pd.concat() function in pandas is used to concatenate two or more pandas objects along a particular axis. The objects can be DataFrames or Series. The concatenation process essentially combines the rows or columns of these objects to create a new object. The key parameters for pd.concat() are objs, axis, and ignore_index.
+
+I also had to ensure that both analysis (Average for Swaziland and Sub-Saharan region) had a similar key (column) before using the cconcat function. The original keys were 'Country name' for Swaziland and 'Region' for Sub-Saharan region. Both dataframs column was changed to location.
+
+This allowed to create bar charts showing us the average fertility and life expectancy statistic of Swaziland compared to Sub-saharan region.
 
 
+# Question 2
+
+From the df_studentid dataframe, I extracted the Country Name, Fertility, Life Expectancy, YearR columns and its records into a second_studentid dataframe.
+
+I've implemented code to generate a new column named 'Decade,' wherein each statistic is assigned a numeric value representing the corresponding decade. all this was effected in a new dataframe called third_sudentid
+
+This enabled me to calculate the average life expectancy for each decade, spanning from the 1960s to the 2000s, using the 'groupby' operation.
+
+This enabled the generation of a line chart illustrating the average life expectancy across the years.
 
 
+# Question 3
+Using the second_studentid dataframe and the help of matplotlib, I wrote code to show the correlation between the fertility rate and life expectancy rate in Swaziland.
 
-- Performed actions such as creating headers, resetting index, changing column names, melting columns, converting datatypes, merging, creating new columns, and 
-  calculating averages.
 
-- Saved the transformed dataframes in Excel format for local download.
+# Leassons Learnt from this project
 
-  The resulting dataframes are df_region, df_country, and df_canada.
+- I learnt how to performed actions such as resetting index for any dataframe i work with, changing column names, The concept of Functions, Merging dataframes, and creating new columns. 
+
+
+# The use of iloc
+When performing the groupby function to get the averages of ferility and life expectancy in all the regions. I specifically wanted the output to show the average for Subsharan region. Using the reset index for a new dataframe allows for integer-location based indexing. 
+  iloc[[6]]
 
 
 # Outcome
