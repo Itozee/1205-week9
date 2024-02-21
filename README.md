@@ -170,15 +170,16 @@ Using the second_studentid dataframe and the help of matplotlib, I wrote code to
 
 # Leassons Learnt from this project
 
-- I learnt how to performed actions such as resetting index for any dataframe i work with, changing column names, The concept of Functions, Merging dataframes, and creating new columns. 
+- Performed actions such as resetting index for any dataframe i work with, changing column names, The concept of Functions, Merging dataframes, and creating new columns. 
 
-
-# The use of iloc (integer-location)
+- The use of iloc (integer-location)
 When performing the groupby function to get the averages of ferility and life expectancy in all the regions. I specifically wanted the output to show the average for Subsharan region. Using the reset index for a dataframe allows for integer-location based indexing allowing me to select specific rows and columns using integer indices.
 All the regions are presented but using iloc[[6]] gives you the oppourtunity to select only the record that relates to Sub-Sharan Africa.
 
-# The use of loc (label-based location)
-I utilized .loc when i generated a new column named 'Decade' and assigned values. .loc is a label-based selector. It is used when you want to select data based on labels(columns) or/and conditions. 
+- The use of loc (label-based location)
+I utilized .loc when i generated a new column named 'Decade' and assigned values. .loc is a label-based selector. It is used when you want to select data based on labels(columns) or/and conditions.
+
+- Exploring Openpyxl for Excel has been a novel experience. Leveraging Python for data transformations and analysis not only saved time but also proved to be an efficient and streamlined process.
 
 # Outcome
 The analysis reveals a decline in fertility rates and an increase in life expectancy in Canada. Fertility dropped from 3.81 in 1960 to 1.61 in 2013, averaging 1.96 over the period, compared to North America's 2.02. Life expectancy in Canada increased from 71.13 in 1960 to 81.40 in 2013, averaging 76.32, compared to North America's 75.64. This trend contributes to Canada's demographic structure with more aged individuals than young ones and emphasizes the country's high immigration requirements. Future analyses may incorporate additional data, such as medical, education, and economic indicators, using advanced statistical tools to explore correlations, make predictions, and offer recommendations.   
