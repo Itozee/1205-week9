@@ -2,7 +2,7 @@
 
 This project is designed to conduct a comprehensive analysis of fertility and life expectancy trends spanning the years 1960 to 2013. The primary goal is to leverage Python for advanced data manipulation, aiming to uncover valuable insights into population dynamics. The analysis will delve into potential economic and health impacts, investigate factors contributing to the aging population, and assess immigration needs.
 
-Taking a more focused approach, the investigation will be specifically tailored to the country associated with my student ID (100871852) as indicated in the metadata. This targeted analysis will offer a nuanced understanding of the region's fertility and life expectancy trends, providing valuable insights into the demographic landscape of the chosen country over the decades.
+Taking a more focused approach, the investigation will be specifically tailored to the country (Swaziland) associated with my student ID (100871852) as indicated in the metadata. This targeted analysis will offer a nuanced understanding of the region's fertility and life expectancy trends, providing valuable insights into the demographic landscape of the chosen country over the decades.
 
 # Data
 
@@ -52,13 +52,19 @@ The columns in this dataset include;
 
 # Questions the data will answer
 
-I will build appropriate visuals for the problem set which specifically aims to address the following question.
+I will create targeted visualizations to address the following questions within the problem set
 
--- How does the country associated with my student ID (100871852) compare to the region it is apart of in terms of average fertility
+-- Bar chart showing how Swaziland (country associated with my student ID) is compared to its region(Sub-Sharan Africa) in terms of average fertility
 
--- How does Life expectancy in the country associated with my student ID (100871852) change, decade to decade ?
 
--- Any relationship between Life Expectancy and Fertility in the country associated with my student ID (100871852)?
+-- Bar chart showing how Swaziland (country associated with my student ID) is compared to its region(Sub-Sharan Africa) in terms of average Life expectancy
+
+
+-- Line Chart showing how Life expectancy in Swaziland change from decade to decade ?
+
+
+-- Scatterplot showing relationship between Life Expectancy and Fertility in Swaziland?
+
 
 # Tools
 
@@ -68,7 +74,11 @@ The libraries that will be loaded into python for this analysis are;
 
 -- Pandas: The pandas library in Python is a powerful and widely used open-source data manipulation and analysis library. It provides data structures for efficiently storing and manipulating large datasets, along with tools for cleaning, aggregating, and analyzing data.
 
+
 -- Openpyxl (Microsoft Excel): This library is used for working with Excel files in Python.
+
+
+-- Matplotlib: Provides a wide variety of static, animated, and interactive plots and charts for analyzing and presenting data. Matplotlib is highly customizable and can be used to create publication-quality figures in various formats.
 
  We also used some modules imported from the openpyxl library, the modules used are;
 
@@ -93,7 +103,7 @@ I plan to elaborate on the utilization of these modules when I begin implementin
 
 # Functions
 
-I started data analysis by first creating Functions to read the datasets and access the worksheets in Excel format after which was stored in a dataframe.
+I started by creating Functions to read the datasets and access the worksheets in Excel format after which was stored in a dataframe.
 
 Functions in Python serve several crucial purposes, some of the reasons why i have used a function for the purpose stated above include;
 
@@ -123,11 +133,13 @@ I first merged df_metatdata with melted_fertility dataframes into a dataframe ca
 At this stage, we can now perform various indept analysis on the second_merge table/dataset/dataframe to get insights about our data.
 
 -- Filter
-Similar to the 'WHERE' clause on SQL, I filtered the data to show on the country associated with my student ID (100871852). This will show me only the records related to Swaziland as it the country associated to my student ID.
+Similar to the 'WHERE' clause on SQL, I filtered the data to show on the country associated with my student ID (100871852). This will show me only the records related to Swaziland as  the country associated to my student ID. This is reflected in the df_studentid dataframe
 
 It is important to know that every transformations con be contained in a new dataframe and that dataframe could be used for further insights.
 
-Some analysis that were further done, to answer our question were;
+
+Some analysis that were further done, to answer question questions 1,2 and 3 are;
+
 -- Average fertility and life expectancy rate for Swaziland
 
 -- Average fertility and life expectancy in Sub-Saharan region where Swaziland is in
