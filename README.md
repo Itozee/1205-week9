@@ -168,7 +168,7 @@ This enabled the generation of a line chart illustrating the average life expect
 Using the second_studentid dataframe and the help of matplotlib, I wrote code to show the correlation between the fertility rate and life expectancy rate in Swaziland.
 
 
-# Leassons Learnt from this project
+# Lessons Learnt from this project
 
 - Performed actions such as resetting index for any dataframe i work with, changing column names, The concept of Functions, Merging dataframes, and creating new columns. 
 
@@ -182,5 +182,8 @@ I utilized .loc when i generated a new column named 'Decade' and assigned values
 - Exploring Openpyxl for Excel has been a novel experience. Leveraging Python for data transformations and analysis not only saved time but also proved to be an efficient and streamlined process.
 
 # Outcome
-The analysis reveals a decline in fertility rates and an increase in life expectancy in Canada. Fertility dropped from 3.81 in 1960 to 1.61 in 2013, averaging 1.96 over the period, compared to North America's 2.02. Life expectancy in Canada increased from 71.13 in 1960 to 81.40 in 2013, averaging 76.32, compared to North America's 75.64. This trend contributes to Canada's demographic structure with more aged individuals than young ones and emphasizes the country's high immigration requirements. Future analyses may incorporate additional data, such as medical, education, and economic indicators, using advanced statistical tools to explore correlations, make predictions, and offer recommendations.   
+-- The examination of the fertility bar chart indicates a decrease in fertility rates for Swaziland, recorded at 5.6%, as opposed to the regional average of 6.5%
+
+-- The analysis of the second bar chart reveals an increase in  in fertility rates for Swaziland at 5.6% compared to its region average of 6.5%.
+averaging 1.96 over the period, compared to North America's 2.02. Life expectancy in Canada increased from 71.13 in 1960 to 81.40 in 2013, averaging 76.32, compared to North America's 75.64. This trend contributes to Canada's demographic structure with more aged individuals than young ones and emphasizes the country's high immigration requirements. Future analyses may incorporate additional data, such as medical, education, and economic indicators, using advanced statistical tools to explore correlations, make predictions, and offer recommendations.   
 
